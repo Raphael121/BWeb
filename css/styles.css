@@ -1665,7 +1665,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-size: var(--text-xl);
+    font-size: var(--text-xxl);
     line-height: var(--vspace-1_25);
 }
 
@@ -1680,7 +1680,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     font-weight: 600;
     line-height: var(--vspace-0_75);
     text-transform: uppercase;
@@ -3021,7 +3021,7 @@ input::-moz-focus-inner {
 }
 @media screen and (max-width: 1000px) {
     .section-title::before {
-        font-size: calc(var(--text-size) * 8);
+        font-size: calc(var(--text-size) * 7);
     }
 }
 @media screen and (max-width: 800px) {
@@ -3034,15 +3034,24 @@ input::-moz-focus-inner {
     .item-list .item {
         padding-right: var(--gutter-md);
     }
+    .display-1 {
+        font-size: var(--text-lg);
+        line-height: var(--vspace-1_5);
+    }
 }
 @media screen and (max-width: 600px) {
     .item-list .item {
         padding-right: var(--gutter-mob);
+        .display-1 {
+        font-size: var(--text-lg);
+        line-height: var(--vspace-1_5);
+    }
+
     }
 }
 @media screen and (max-width: 400px) {
     .display-1 {
-        font-size: var(--text-xl);
+        font-size: var(--text-lg);
         line-height: var(--vspace-1_5);
     }
     .item-title {
@@ -3105,7 +3114,7 @@ input::-moz-focus-inner {
 }
 
 .s-header__content {
-    height: 8.8rem;
+    height: 12rem;
     position: relative;
 }
 
@@ -3130,14 +3139,14 @@ input::-moz-focus-inner {
 .s-header__logo a {
     display: block;
     border: none;
-    padding: 0;
+    padding: 10px;
     outline: 0;
 }
 
 .s-header__logo img {
-   /* width: 68px;*/
-    height: 50px;
+    height: 70px;
     margin-bottom: 0;
+    margin-right: 10px;
 }
 
 
@@ -3145,24 +3154,25 @@ input::-moz-focus-inner {
  * ## main navigation
  * ------------------------------------------------------------------- */
 .s-header__nav-wrap {
-    padding-left: 21.6rem;
+    padding-left: 0rem;
 }
 
 .s-header__nav {
     list-style: none;
     font-family: var(--font-2);
     font-weight: 600;
-    font-size: 1rem;
-    line-height: 6rem;
+    font-size: 1.4rem;
+    line-height: 5rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
+    padding-left: 4rem;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: .3em;
 }
 
 .s-header__nav a {
-    color: var(--color-gray-8);
+    color: var(--color-gray-10);
 }
 
 .s-header__nav a:hover, .s-header__nav a:focus {
@@ -3171,7 +3181,7 @@ input::-moz-focus-inner {
 
 .s-header__nav li {
     display: inline-block;
-    padding-left: 0;
+    padding-left: 10;
     margin: 0 1rem;
 }
 
@@ -3226,7 +3236,7 @@ input::-moz-focus-inner {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: inherit;
+    background-color: black;
     -webkit-transition: all .5s;
     transition: all .5s;
     position: absolute;
@@ -3249,7 +3259,7 @@ input::-moz-focus-inner {
 
 .s-header__menu-toggle.is-clicked span::before, 
 .s-header__menu-toggle.is-clicked span::after {
-    background-color: white;
+    background-color: black;
 }
 
 .s-header__menu-toggle.is-clicked span::before {
@@ -3286,7 +3296,7 @@ input::-moz-focus-inner {
     -webkit-box-pack: center;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 10rem;
 }
 
@@ -3304,16 +3314,16 @@ input::-moz-focus-inner {
 
 .s-header__content .btn:hover, 
 .s-header__content .btn:focus {
-    background-color: var(--color-gray-19) !important;
-    border-color: var(--color-gray-19) !important;
+    background-color: var(--color-black) !important;
+    border-color: var(--color-black) !important;
     color: white;
 }
 
 .sticky .s-header__content .btn:hover, 
 .sticky .s-header__content .btn:focus {
-    background-color: white !important;
-    border-color: white !important;
-    color: black;
+    background-color: black !important;
+    border-color: black !important;
+    color: --color-gray-10;
 }
 
 .sticky .s-header__content .btn:hover svg path, 
@@ -3372,7 +3382,7 @@ input::-moz-focus-inner {
     }
     .s-header__content {
         display: block;
-        background-color: var(--color-gray-19);
+        background-color: var(--color-white);
         height: auto;
         width: 100%;
         padding: calc(5 * var(--space)) 6rem var(--vspace-2);
@@ -4198,11 +4208,11 @@ html.no-csstransitions .s-hero__content {
 }
 
 .service-icon--branding {
-    background-image: url(../images/icons/services/icon-branding.svg);
+    background-image: url(../images/icons/services/icon-software-design.svg);
 }
 
 .service-icon--frontend {
-    background-image: url(../images/icons/services/icon-frontend.svg);
+    background-image: url(../images/icons/services/icon-service-design-1.svg);
 }
 
 .service-icon--research {
@@ -4210,11 +4220,11 @@ html.no-csstransitions .s-hero__content {
 }
 
 .service-icon--illustration {
-    background-image: url(../images/icons/services/icon-illustration.svg);
+    background-image: url(../images/icons/services/icon-technical-design.svg);
 }
 
 .service-icon--ecommerce {
-    background-image: url(../images/icons/services/icon-ecommerce.svg);
+    background-image: url(../images/icons/services/icon-experience-design.svg);
 }
 
 
@@ -4736,19 +4746,26 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
     .s-contact__email {
-        font-size: calc(var(--text-size) * 3);
+        font-size: calc(var(--text-size) * 2.5);
     }
 }
 
 @media screen and (max-width: 1200px) {
     .s-contact__email {
-        font-size: 10vw;
+        font-size: calc(var(--text-size) * 1.2);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .s-contact__email {
+        font-size: calc(var(--text-size) * 2);
     }
 }
 
 @media screen and (max-width: 400px) {
     .s-contact {
         padding-top: var(--vspace-4);
+         font-size: calc(var(--text-size) * 0.75);
     }
 }
 
