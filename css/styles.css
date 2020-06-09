@@ -3697,7 +3697,7 @@ input::-moz-focus-inner {
 
 .s-hero__scroll-link:hover, 
 .s-hero__scroll-link:focus {
-    color: white;
+    color: black;
 }
 
 
