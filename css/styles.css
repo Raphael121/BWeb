@@ -4737,6 +4737,16 @@ html.no-csstransitions .s-hero__content {
 .s-contact__email a:hover, 
 .s-contact__email a:focus {
     border-bottom: 2px solid white;
+    color: black;    
+}
+.s-contact__location a {
+color: white;
+
+}
+
+.s-contact__location a:hover, 
+.s-contact__location a:focus {
+       color: black;
 }
 
 
