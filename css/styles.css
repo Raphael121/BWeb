@@ -1,7 +1,7 @@
 /* =================================================================== 
- * Flare Main Stylesheet
+ * BeehiveCongruence Main Stylesheet
  * Template Ver. 1.0.0
- * 03-19-2020
+ * 10-06-2020
  * ------------------------------------------------------------------
  *
  * TOC:
@@ -2053,7 +2053,7 @@ button,
 
 #loader>div {
     content: "";
-    background: white;
+    background: #F3E205;
     width: 6px;
     height: 6px;
     position: absolute;
