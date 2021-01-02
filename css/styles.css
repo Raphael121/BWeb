@@ -1,7 +1,7 @@
 /* =================================================================== 
- * Flare Main Stylesheet
+ * BeehiveCongruence Main Stylesheet
  * Template Ver. 1.0.0
- * 03-19-2020
+ * 10-06-2020
  * ------------------------------------------------------------------
  *
  * TOC:
@@ -1680,7 +1680,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-    font-size: var(--text-md);
+    font-size: var(--text-size);
     font-weight: 600;
     line-height: var(--vspace-0_75);
     text-transform: uppercase;
@@ -2053,7 +2053,7 @@ button,
 
 #loader>div {
     content: "";
-    background: white;
+    background: #F3E205;
     width: 6px;
     height: 6px;
     position: absolute;
@@ -2430,7 +2430,7 @@ input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
     background: var(--color-btn-primary);
     border-color: var(--color-btn-primary);
-    color: var(--color-btn-primary-text);
+    color: var(--color-black);
 }
 
 .btn.btn--primary:hover, 
@@ -3697,7 +3697,7 @@ input::-moz-focus-inner {
 
 .s-hero__scroll-link:hover, 
 .s-hero__scroll-link:focus {
-    color: white;
+    color: black;
 }
 
 
@@ -4737,6 +4737,16 @@ html.no-csstransitions .s-hero__content {
 .s-contact__email a:hover, 
 .s-contact__email a:focus {
     border-bottom: 2px solid white;
+    color: black;    
+}
+.s-contact__location a {
+color: white;
+
+}
+
+.s-contact__location a:hover, 
+.s-contact__location a:focus {
+       color: black;
 }
 
 
