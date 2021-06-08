@@ -164,6 +164,7 @@
     --color-gray-2 : #e2e3e5;
     --color-gray-1 : #f0f1f2;
     --color-white  : #ffffff;
+    --color-col    : #ebedec;
 
     /* text
      */
@@ -4484,7 +4485,7 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-    background-color: var(--color-bg);
+    background-color: var(--color-col);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
     position: relative;
