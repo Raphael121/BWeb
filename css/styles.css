@@ -4589,6 +4589,29 @@ html.no-csstransitions .s-hero__content {
     .s-printing {
         padding-top: var(--vspace-4);
     }
+
+    .s-printing .sla-upper{
+        display: block;
+    }
+
+    .s-printing .sla-lower{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 401px) {
+    .s-printing {
+        padding-top: var(--vspace-4);
+    }
+
+    .s-printing .sla-upper{
+        display: none;
+    }
+
+    .s-printing .sla-lower{
+        display: block;
+    }
 }
 
 
